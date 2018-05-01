@@ -1,5 +1,9 @@
 from django.db import models
 
 class Word(models.Model):
-    word = models.CharField(max_length=150)
+    name = models.CharField(max_length=150)
+
+class Definition(models.Model):
+    part_of_speech = models.CharField(max_length=100)
     definition = models.CharField(max_length=500)
+    word = models.ForeignKey(Word, realsted_name="definitions")
