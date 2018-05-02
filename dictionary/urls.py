@@ -1,8 +1,8 @@
-from django.conf.urls import url
-from django.views.generic import TemplateView
-from dictionary.api import WordApi
+from dictionary.api import WordViewSet, DefinitionViewSet
+from rest_framework.routers import DefaultRouter
 
-urlpatterns = [
-    url(r'^word-api$', WordApi.as_view()),
-    url(r'^app', TemplateView.as_view(template_name="dictionary/index.html"))
-]
+router = DefaultRouter()
+router.register(r'word', WordViewSet)
+router.register(r'definition', DefinitionViewSet)
+
+urlpatterns = router.urls

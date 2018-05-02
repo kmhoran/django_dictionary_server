@@ -6,6 +6,4 @@ class Word(models.Model):
 class Definition(models.Model):
     part_of_speech = models.CharField(max_length=100)
     definition = models.CharField(max_length=500)
-    word = models.ForeignKey(
-        'Word', 
-        on_delete=models.CASCADE,)
+    word = models.ForeignKey('Word', on_delete=models.CASCADE)
