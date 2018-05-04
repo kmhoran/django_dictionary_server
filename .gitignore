@@ -2,3 +2,4 @@ __pycache__/
 .vs/
 djangular/config.py
 db.sqlite3
+staticfiles
