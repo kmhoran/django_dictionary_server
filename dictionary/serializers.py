@@ -11,9 +11,13 @@ class DefinitionSerializer(serializers.ModelSerializer):
                 'part_of_speech')
 
 class WordSerializer(serializers.ModelSerializer):
-    definitions = DefinitionSerializer(read_only=True, many=True)
+    definition_set = DefinitionSerializer(required=False, read_only=True, many=True)
     class Meta:
         model = Word
         fields=('id',
                 'name',
-                'definitions')
+                'definition_set')
+
+        
+
+
