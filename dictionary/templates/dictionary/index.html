@@ -7,12 +7,12 @@
         <base href="/">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="icon" type="image/x-icon" href="{% static 'dictionary/favicon.ico' %}">
-        <link href="{% static 'dictionary/styles.bundle.css' %}" rel="stylesheet"/>
+        <link href="{% static 'dictionary/styles.css' %}" rel="stylesheet"/>
     </head>
     <body>
         <app-root></app-root>
-        <script type="text/javascript" src="{% static 'dictionary/inline.bundle.js' %}"></script>
-        <script type="text/javascript" src="{% static 'dictionary/polyfills.bundle.js' %}"></script>
-        <script type="text/javascript" src="{% static 'dictionary/main.bundle.js' %}"></script>
+        <script type="text/javascript" src="{% static 'dictionary/runtime.js' %}"></script>
+        <script type="text/javascript" src="{% static 'dictionary/polyfills.js' %}"></script>
+        <script type="text/javascript" src="{% static 'dictionary/main.js' %}"></script>
     </body>
 </html>
