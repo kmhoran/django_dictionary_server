@@ -14,13 +14,17 @@ class WordViewSet(ModelViewSet):
         serializer = WordSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
-           
-
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-
 class DefinitionViewSet(ModelViewSet):
-    # Get all words from DB
+    # Get all defibitions from DB
     queryset = Definition.objects.all()
     serializer_class = DefinitionSerializer
+
+    def create(self, request):
+        serializer = DefinitionSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

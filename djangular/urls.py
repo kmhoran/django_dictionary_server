@@ -19,8 +19,8 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # Single-page app
-    path('', TemplateView.as_view(template_name="dictionary/index.html")),
     # Api endpoints
-    path('api/', include('dictionary.urls'))
+    path('api/', include('dictionary.urls')),
+    # Single-page app
+    path('', TemplateView.as_view(template_name="dictionary/index.html"))
 ]
