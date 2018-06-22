@@ -1,0 +1,14 @@
+[2018-06-22 13:38:01 -0700] [10968] [INFO] Starting gunicorn 19.8.1
+[2018-06-22 13:38:01 -0700] [10968] [INFO] Listening at: http://0.0.0.0:5000 (10968)
+[2018-06-22 13:38:01 -0700] [10968] [INFO] Using worker: sync
+[2018-06-22 13:38:01 -0700] [10974] [INFO] Booting worker with pid: 10974
+[2018-06-22 13:40:49 -0700] [10968] [INFO] Handling signal: int
+[2018-06-22 20:40:49 +0000] [10974] [INFO] Worker exiting (pid: 10974)
+[2018-06-22 13:40:49 -0700] [10968] [INFO] Shutting down: Master
+[2018-06-22 13:41:52 -0700] [11557] [INFO] Starting gunicorn 19.8.1
+[2018-06-22 13:41:52 -0700] [11557] [INFO] Listening at: http://0.0.0.0:5000 (11557)
+[2018-06-22 13:41:52 -0700] [11557] [INFO] Using worker: sync
+[2018-06-22 13:41:52 -0700] [11561] [INFO] Booting worker with pid: 11561
+[2018-06-22 13:44:21 -0700] [11557] [INFO] Handling signal: int
+[2018-06-22 20:44:21 +0000] [11561] [INFO] Worker exiting (pid: 11561)
+[2018-06-22 13:44:21 -0700] [11557] [INFO] Shutting down: Master
