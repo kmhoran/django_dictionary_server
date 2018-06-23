@@ -48,5 +48,4 @@ urllib3==1.22
 virtualenv==15.1.0
 whitenoise==3.3.1
 wrapt==1.10.11
-xkit==0.0.0
 XlsxWriter==0.7.3
